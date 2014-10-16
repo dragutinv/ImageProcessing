@@ -1,0 +1,27 @@
+function [ output_args ] = ImgInvert( input_args )
+%IMGINVERT Summary of this function goes here
+%   Detailed explanation goes here
+
+img = imread('ImgDemos\Lenna.png');
+subplot(10,2,1);
+imshow(img);
+title('Original');
+
+subplot(10,2,2);
+imshow(255 - img);
+title('Invert');
+
+
+subplot(10,2,3);
+imshow(img);
+title('Gray');
+
+subplot(10,2,4);
+imshow(255-img);
+title('Gray Invert');
+
+subplot(10,2,4);
+imshow(255-img);
+title('Red');
+
+end
